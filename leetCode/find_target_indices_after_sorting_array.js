@@ -15,8 +15,8 @@ var targetIndices = function(nums, target) {
     let currentTargetIndex = countBeforeTarget; 
 
     for (let i=0; i<countTargetValues; i++){
-        result.push(countBeforeTarget);
-        countBeforeTarget++; 
+        result.push(currentTargetIndex);
+        currentTargetIndex++; 
     }
 
     return result;
