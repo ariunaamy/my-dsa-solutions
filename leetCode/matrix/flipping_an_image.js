@@ -1,4 +1,5 @@
-/* 832. Flipping an Image
+/* Leetcode problem # 832
+ Flipping an Image
 Easy
 3.3K
 235
