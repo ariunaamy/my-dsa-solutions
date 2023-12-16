@@ -31,7 +31,7 @@ Then invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
 var flipAndInvertImage = function(image) {
     let result = []; 
 
-    const flipAndInvert = (row) => {
+    const flipAndInvertRow = (row) => {
         let result = []
         for(let i=row.length-1; i>=0; i--){
             if(row[i] === 0){
@@ -42,13 +42,11 @@ var flipAndInvertImage = function(image) {
         }
         return result
     }
-
     for (let row of image){
-        result.push(flipAndInvert(row))
+        result.push(flipAndInvertRow(row))
     }
 
-    return result;
-    
+    return result;    
 };
 
 console.log(flipAndInvertImage([[1,1,0],[1,0,1],[0,0,0]]) ) //[[1,0,0],[0,1,0],[1,1,1]]
